@@ -18,18 +18,29 @@
             specific as possible using the staff lookup option first.
           </p>
         </div>
-        <form id="item-form">
+        <form id="name-form">
           <div class="form-control">
-            <input type="text" class="form-input" id="name-input" name="name" />
+            <label for="name">
+              <input
+                type="text"
+                class="form-input"
+                id="name-input"
+                name="name"
+              />
+            </label>
           </div>
         </form>
         <div class="btns form-control">
-          <button type="submit" class="btn">Continue</button>
+          <button type="submit" class="btn" id="form-submit" form="name-form">
+            Continue
+          </button>
         </div>
+
         <!-- <div class="btns">
           <a>Continue</a>
         </div> -->
       </div>
     </main>
+    <script src="javascript.js"></script>
   </body>
 </html>
