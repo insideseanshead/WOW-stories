@@ -30,7 +30,7 @@ function addNameToStorage(name) {
   // Convert to JSON and set to local storage
   localStorage.setItem('Name', JSON.stringify(namesFromStorage));
 
-  window.location = 'http://127.0.0.1:5500/';
+  window.location = './question-2.html';
 }
 
 // Get Names from Storage
