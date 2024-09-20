@@ -9,11 +9,21 @@
 body {
     background-image: url(../images/WebBackgroundImage-01.png);
     background-size: cover;
-    font-family: "proxima-nova", sans-serif;
-    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 24px;
+    color: #006341;
     height: 100vh;
+}
 
-    
+h1 {
+    font-family: eb-garamond;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.description {
+    font-size: 18px;
 }
 
 .two-col {
@@ -29,13 +39,21 @@ body {
 }
 
 header,
-.image,
 main {
-    background-color:steelblue;
-    color: white;
+
+    /* background-color:steelblue; */
+    /* color: white; */
     /* padding: 20px; */
-    border:skyblue 1px solid;
+    /* border:skyblue 1px solid; */
     padding: 100px 
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    height: 100vh
 }
 
 /* header {
@@ -44,13 +62,33 @@ main {
 } */
 
 .copy {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .btns {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+.btns a {
+    background-color: #006341;
+    font-family: proxima-nova,sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border: none; 
+    border-radius: 50px;
+}
+
+.btns a:hover {
+    background-color: #154734;
 }
