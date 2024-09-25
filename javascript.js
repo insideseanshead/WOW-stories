@@ -1,54 +1,11 @@
-const nameForm = document.querySelector('#name-form');
-const nameInput = document.querySelector('#name-input');
-const formBtn = document.querySelector('#form-submit');
+const formEl = document.querySelector('.form');
 
-// On Name Submit
-function onNameSubmit(e) {
-  e.preventDefault();
+formEl.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-  const newName = nameInput.value;
+  const formData = new FormData(formEl);
+  const data = Object.fromEntries(formData);
 
-  // Validate Input
-  if (newName === '') {
-    alert('Please add a name');
-    return;
-  }
-
-  // Add Name to storage
-  addNameToStorage(newName);
-
-  console.log(newName);
-}
-
-// Add Name to Storage
-function addNameToStorage(name) {
-  let namesFromStorage = getNamesFromStorage();
-
-  // Add New Name to Array
-  namesFromStorage.push(name);
-
-  // Convert to JSON and set to local storage
-  localStorage.setItem('Name', JSON.stringify(namesFromStorage));
-
-  window.location = './question-2.html';
-}
-
-// Get Names from Storage
-function getNamesFromStorage() {
-  let namesFromStorage;
-
-  if (localStorage.getItem('name') === null) {
-    namesFromStorage = [];
-  } else {
-    namesFromStorage = JSON.parse(localStorage.getItem('name'));
-  }
-
-  return namesFromStorage;
-}
-
-// Initialize app
-function init() {
-  // Event Listeners
-}
-
-init(nameForm.addEventListener('submit', onNameSubmit));
+  console.log(formEl.id);
+  localStorage.setItem(`${formEl.id}`, JSON.stringify(data));
+});
