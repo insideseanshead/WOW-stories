@@ -22,6 +22,12 @@ h1 {
     line-height: 80px;
 }
 
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+  }
+
 .form-input {
     width: 40vw;
     font-family: proxima-nova, sans-serif;
