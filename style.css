@@ -31,7 +31,7 @@ h1 {
   }
 
 .form-input {
-    width: 100%;
+    width: 40vw;
     font-family: proxima-nova, sans-serif;
     font-size:24px;
     color: #006341;
@@ -45,7 +45,9 @@ main {
     padding: 20px
 }
 
-
+.image {
+    display: none;
+}
 
 @media (min-width: 60em) {
     .two-col {
@@ -62,6 +64,15 @@ main {
         /* border:skyblue 1px solid; */
         padding: 100px 
     }
+
+    .image {
+        display: block;
+        overflow: hidden;
+    }
+    
+    .image img {
+        height: 100vh
+    }
 }
 
 .one-col {
@@ -73,13 +84,7 @@ main {
 header,
 
 
-.image {
-    overflow: hidden;
-}
 
-.image img {
-    height: 100vh
-}
 
 /* header {
     background: red;
