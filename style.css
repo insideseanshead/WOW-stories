@@ -9,6 +9,8 @@
 body {
     background-image: url(./images/WebBackgroundImage-01.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: proxima-nova, sans-serif;
     font-size: 24px;
     color: #006341;
@@ -29,7 +31,7 @@ h1 {
   }
 
 .form-input {
-    width: 40vw;
+    width: 100%;
     font-family: proxima-nova, sans-serif;
     font-size:24px;
     color: #006341;
@@ -39,10 +41,27 @@ h1 {
     font-size: 18px;
 }
 
-.two-col {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: 80px 1fr; */
+main {
+    padding: 20px
+}
+
+
+
+@media (min-width: 60em) {
+    .two-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 80px 1fr; */
+    }
+
+    main {
+
+        /* background-color:steelblue; */
+        /* color: white; */
+        /* padding: 20px; */
+        /* border:skyblue 1px solid; */
+        padding: 100px 
+    }
 }
 
 .one-col {
@@ -52,14 +71,7 @@ h1 {
 }
 
 header,
-main {
 
-    /* background-color:steelblue; */
-    /* color: white; */
-    /* padding: 20px; */
-    /* border:skyblue 1px solid; */
-    padding: 100px 
-}
 
 .image {
     overflow: hidden;
@@ -86,7 +98,7 @@ main {
     display: grid;
     grid-template-rows: repeat(2,1fr);
     gap: 20px;
-    width: 400px;
+    max-width: 400px;
     align-self: flex-end;
 }
 
@@ -107,3 +119,4 @@ main {
 .btns a:hover {
     background-color: #154734;
 }
+
