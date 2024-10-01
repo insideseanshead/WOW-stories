@@ -12,14 +12,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: proxima-nova, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #006341;
     height: 100vh;
 }
 
 h1 {
     font-family: eb-garamond;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 80px;
 }
@@ -33,12 +33,12 @@ h1 {
 .form-input {
     width: 40vw;
     font-family: proxima-nova, sans-serif;
-    font-size:24px;
+    font-size:1.5rem;
     color: #006341;
 }
 
 .description {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 main {
@@ -75,7 +75,9 @@ main {
     }
 
     .community-story {
-        overflow: scroll; height: 50vh; overflow-x: hidden
+        overflow: scroll; 
+        max-height: 40vh; 
+        overflow-x: hidden
     }
 }
 
@@ -116,7 +118,7 @@ header,
     background-color: #006341;
     font-family: proxima-nova,sans-serif;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
