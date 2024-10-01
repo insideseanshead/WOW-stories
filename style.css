@@ -73,6 +73,10 @@ main {
     .image img {
         height: 100vh
     }
+
+    .community-story {
+        overflow: scroll; height: 50vh; overflow-x: hidden
+    }
 }
 
 .one-col {
@@ -105,6 +109,7 @@ header,
     gap: 20px;
     max-width: 400px;
     align-self: flex-end;
+    margin-top: 3rem
 }
 
 .btns a, button {
@@ -119,9 +124,11 @@ header,
     padding: 20px;
     border: none; 
     border-radius: 50px;
+
 }
 
-.btns a:hover {
+.btns a:hover, button:hover {
     background-color: #154734;
+    cursor: pointer;
 }
 
