@@ -17,6 +17,10 @@ body {
     height: 100vh;
 }
 
+p {
+    margin-bottom: 1.5rem;
+}
+
 h1 {
     font-family: eb-garamond;
     font-size: 3rem;
